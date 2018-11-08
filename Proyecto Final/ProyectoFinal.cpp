@@ -136,30 +136,42 @@ void IngresarAlumno() {
 	cin.ignore();
 	cout << "Apellidos: ";
 	getline(cin, e[c].apellidos);
+	
 	cout << "Nombre: ";
 	getline(cin, e[c].nombre);
+	
 	cout << "Matricula: ";
 	cin >> e[c].matricula;
+	
 	cin.ignore();
+	
 	cout << "Telefono: ";
 	getline(cin, e[c].telefono);
+		
+	
 	cout << "Email: ";
 	getline(cin, e[c].email);
-	cout << "Direccion: " << endl;
+	
 	cout << "Calle: ";
 	getline(cin, e[c].calle);
+	
 	cout << "Numero de casa: ";
 	cin >> e[c].nc;
 	cin.ignore();
+	
 	cout << "colonia: ";
 	getline(cin, e[c].colonia);
+	
 	cout << "Calificacion 1:" << endl;
 	cin >> e[c].cal1;
 	cin.ignore();
+	
 	cout << "Calificacion 2:" << endl;
 	cin >> e[c].cal2;
+	
 	cout << "Calificacion 3:" << endl;
 	cin >> e[c].cal3;
+	
 	if (e[c].cal1 == 0 || e[c].cal2 == 0 || e[c].cal3 == 0) {
 		e[c].promedio = 0;
 	}
@@ -360,8 +372,7 @@ void modificar() {
 	cout << "¿Que Matricula buscas? " << endl;
 	cin >> opcion;
 
-	int i = 0;
-	while (i < c) {
+	for (int i = 0;i < c;i++) {
 
 		if (e[i].matricula == opcion) {
 			cout << "¿Que desea Modificar?" << endl;
@@ -380,40 +391,51 @@ void modificar() {
 			switch (opcion)
 			{
 			case 0:
+				cin.ignore();
 				cout << "Nombre: ";
 				getline(cin, e[i].nombre);
+				
 				break;
 
 			case 1:
+				cin.ignore();
 				cout << "Apellido: ";
 				getline(cin, e[i].apellidos);
+				
 				break;
 
 			case 2:
-				cin.ignore();
 				cout << "Matricula: ";
 				cin >> e[i].matricula;
 
 				break;
 
 			case 3:
+				cin.ignore();
 				cout << "Telefono: ";
 				getline(cin, e[i].telefono);
+			
 				break;
 
 			case 4:
+				cin.ignore();
 				cout << "Correo: ";
 				getline(cin, e[i].email);
+				
 				break;
 
 			case 5:
+				cin.ignore();
 				cout << "Calle: ";
 				getline(cin, e[i].calle);
+				
 				break;
 
 			case 6:
+				cin.ignore();
 				cout << "Colonia: ";
 				getline(cin, e[i].colonia);
+			
 				break;
 
 			case 7:
@@ -439,7 +461,7 @@ void modificar() {
 
 			if (opcion != -1) {
 				cout << "Datos del alumno:" << endl;
-				cout << "Nombre: " << e[i].nombre << " " << e[i].apellidos << "        Matricula: " << e[i].matricula << endl;
+				cout << "Nombre: " << e[i].nombre << " " << e[i].apellidos  << endl;
 				cout << "Matricula: " << e[i].matricula << endl;
 				cout << "Correo: " << e[i].email << endl;
 				cout << "Telefono: " << e[i].telefono << endl;
@@ -459,15 +481,21 @@ void modificar() {
 				cout << endl;
 			}
 		}
-		
-		Guardar();
-		excel();
-
+		else {
+			cout << "No se encontro a nadie con esta matricula";
+			system("pause > nul");
+			modificar();
+		}
+	
 		i++;
+		
 	}
 
-	system("pause > nul");
+	Guardar();
+	system("pause");
+	excel();
 	menu();
+	
 }
 
 void eliminar() {
@@ -481,7 +509,7 @@ void eliminar() {
 
 		if (e[i].matricula == opcion) {
 			cout << "Datos del alumno:" << endl;
-			cout << "Nombre: " << e[i].nombre << " " << e[i].apellidos << "        Matricula: " << e[i].matricula << endl;
+			cout << "Nombre: " << e[i].nombre << " " << e[i].apellidos << endl;
 			cout << "Matricula: " << e[i].matricula << endl;
 			cout << "Correo: " << e[i].email << endl;
 			cout << "Telefono: " << e[i].telefono << endl;
@@ -492,8 +520,8 @@ void eliminar() {
 			cout << endl;
 
 
-			cout << "¿Eliminar a " << e[i].id << "?" << endl;
-			cout << "1. Sí \n2. No" << endl;
+			cout << "¿Eliminar a " << e[i].matricula << "?" << endl;
+			cout << " 1. Sí \n 2. No" << endl;
 			cin >> opcion;
 
 			if (opcion == 1 && c != 0) {
@@ -534,7 +562,7 @@ void Manual() {
 }
 void Guardar() {
 	cout << "¿Deseas guardar?" << endl;
-	cout << "1.- Sí \n2. No." << endl;
+	cout << " 1.- Sí \n 2. No." << endl;
 
 	cin >> opcion;
 	if (opcion == 1) {
@@ -558,6 +586,15 @@ void excel() {
 	ofstream archivo;
 
 	archivo.open("ListasFCFM.csv");
+	archivo << "Nombre: "<< ",";
+	archivo << "Apellido: " << ",";
+	archivo << "Matricula: " << ",";
+	archivo << "Correo: " << ",";
+	archivo << "Telefono: " << ",";
+	archivo << "Parcial 1: " << ",";
+	archivo << "Parcial 2: " << ",";
+	archivo << "Parcial 3: " << ",";
+	archivo << "Promedio: " << endl;
 	for (int i = 0;i < c;i++) {
 		
 		archivo << e[i].nombre << ",";
