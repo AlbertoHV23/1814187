@@ -8,8 +8,8 @@
 
 # INTRODUCCION:
 Este es un programa para poder tener una lista de alumnos.
-En este programa puedes dar de alta un alumno, Ver todos los alumnos registrados
-eliminar a una personas que hayas agregado,modificar algun dato de un alumno, y podras buscar algun estudiante registrado ya sea por su nombre o su matricula. Tambien podrar guardar todos tus datos en un archivo de texto o en un documento excel.
+
+En este programa puedes dar de alta un alumno, Ver todos los alumnos registrados eliminar a una personas que hayas agregado,modificar algun dato de un alumno, y podras buscar algun estudiante registrado ya sea por su nombre o su matricula. Tambien podrar guardar todos tus datos en un archivo de texto o en un documento excel.
 ---
 
 # Requisitos para poder usar este programa
@@ -95,7 +95,7 @@ Si usted presionó "5" le saldra la pantalla en donde podra modificar un alumno.
 
  ---
 
-# Manuel
+# Manual
  Si tiene alguna duda podra volver a leer el manual en esta opcion.
 
  ---
