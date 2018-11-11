@@ -4,7 +4,7 @@
 #### 1814187
 ...
 
-#INTRODUCCION:
+# INTRODUCCION:
 Este es un programa para poder tener una lista de alumnos.
 En este programa puedes dar de alta un alumno, Ver todos los alumnos registrados
 eliminar a una personas que hayas agregado,modificar algun dato de un alumno, y podras buscar algun estudiante registrado ya sea por su nombre o su matricula. Tambien podrar guardar todos tus datos en un archivo de texto o en un documento excel.
@@ -16,7 +16,7 @@ eliminar a una personas que hayas agregado,modificar algun dato de un alumno, y 
 
 ...
 # ¿Como Instalar Visual studio 2015?
-1. Ir a este link [VisualStudio] (https://visualstudio.microsoft.com/es/vs/).
+1. Ir a este link [VisualStudio](https://visualstudio.microsoft.com/es/vs/).
 2. Seleccionar tu sistema operativo.
 3. Click en "Descargar Visual Studio" y seleccionar la opcion de "Comunity"
 4. Seleccionar la carpeta en donde desea guardar.
