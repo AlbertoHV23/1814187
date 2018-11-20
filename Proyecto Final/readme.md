@@ -10,7 +10,7 @@
 
 ---
 
-# INTRODUCCION:
+# INTRODUCCIÒN:
 
 Este es un programa para poder tener una Agenda Electronica.
 
@@ -19,7 +19,7 @@ En este programa puedes dar de alta un alumno, Ver todos los alumnos registrados
 ---
 
 # Requisitos para poder usar este programa
-1. Tener una computadora, puede ser laptop o computadora de escritorio
+1. Tener una computadora, puede ser laptop o computadora de escritorio.
 2. Tener instalado visual estudio 2015 en tu computadora ya sea en "Windows" o "Mac".
 
 ---
@@ -27,7 +27,7 @@ En este programa puedes dar de alta un alumno, Ver todos los alumnos registrados
 # ¿Como Instalar Visual studio 2015?
 1. Ir a este link [VisualStudio](https://visualstudio.microsoft.com/es/vs/).
 2. Seleccionar tu sistema operativo.
-3. Click en "Descargar Visual Studio" y seleccionar la opcion de "Comunity"
+3. Click en "Descargar Visual Studio" y seleccionar la opcion de "Comunity".
 4. Seleccionar la carpeta en donde desea guardar.
 5. Una vez guardado el programa, Clic derecho y sellecione la opcion de "Ejecutar como administrador".
 6. Instalar el programa.
@@ -36,11 +36,11 @@ En este programa puedes dar de alta un alumno, Ver todos los alumnos registrados
 
 # ¿Como abrir Visual studio?
 1. Clic derecho y selecione la opcion de "Abrir".
-2. Archivo > Nuevo > Proyecto
-3. Elegir Visual C++ (columna izquierda)
-4. Elegir Proyecto vacío
-5. Especificar nombre y ubicación
-6. Aceptar
+2. Archivo > Nuevo > Proyecto.
+3. Elegir Visual C++ (columna izquierda).
+4. Elegir Proyecto vacío.
+5. Especificar nombre y ubicación.
+6. Aceptar.
 
 ---
 
